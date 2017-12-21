@@ -1,0 +1,198 @@
+/*
+PRIMARY COLORS:
+//////////////////
+GREEN       - #afc53c
+BLUE        - #1bbcde
+ORANGE      - #f99f33
+
+FOOTER COLORS:
+//////////////////
+NAVY        - #002b36
+BRIGHTER:   - #073642
+*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans');
+
+
+* {
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #fff;
+       background-color: #fef;
+      overflow-x:hidden;
+      margin:0;padding:0;
+}
+
+/* TEXT STYLES */
+h1 { color: #222; font-family: 'Open Sans',sans-serif; font-size: 3.125em; font-weight: 300; line-height: 72px; margin-bottom:24px; text-align: center; letter-spacing: 0px; }
+h2 { color:#222; font-family: 'Open Sans', sans-serif; font-size: 1.375em; font-weight: 700; line-height: 36px; margin-bottom: 24px; text-align: center;letter-spacing: 0px;
+text-shadow:rgba(1,1,1,.2); text-transform: uppercase;}
+h3 { color:#222; font-family:'Open Sans', sans-serif; letter-spacing: 0px; font-size: 1.125em; font-weight:bold; line-height: 24px; margin:0px; margin-bottom:24px; margin-top:24px; text-align: center;  }
+h5 { color:white; font-family:'Open Sans', sans-serif; letter-spacing: 0px; font-size: 1.125em; font-weight:bold; line-height: 24px; margin:0px; margin-bottom:24px; margin-top:24px; text-align: center;  }
+h4 { color:green; font-family:'Open Sans', sans-serif; letter-spacing: 0px; font-size: 1.125em; font-weight:bold; line-height: 24px; margin:0px; margin-bottom:24px; margin-top:24px; text-align: center;  }
+p { color: #333; font-family:'Open Sans',sans-serif; font-size: .8em; font-weight:lighter; line-height: 1.4em; padding:6px; letter-spacing: 0px; text-align: center; }
+p.title { color: #fff; font-family:'Open Sans',sans-serif; font-size: 1em; font-weight:lighter; line-height: 1.1em; padding:2em; letter-spacing: 1px; text-align: center; background-color:rgba(0,0,0,0);}
+
+
+.contact-form{
+    margin:0;
+    background-color:#fff;
+    width:100%;
+    display:block;
+    background-image:url('../assets/images/form-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size:cover; 
+    padding-top:2em;
+    padding-bottom:2em;
+}
+#contact{
+  width:100%;
+  position:relative;
+  display:block;
+  background-color:rgba(1,1,1,.2);
+  height:auto;
+  padding:2em;
+}
+form {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  position:relative;
+  height:auto;
+}
+
+form h1 {
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  text-align: center;
+  color: green;
+  border-bottom: 1px solid #ccc;
+}
+form .row {
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+}
+form .column {
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+  display:inline;
+  width:49%;
+}
+form input[type="text"],form input[type="email"],form input[type="tel"], form input[type="password"], form textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px 10px 10px 90px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+form textarea {
+  height: auto;
+  min-height: 200px;
+  padding: 50px 10px 10px 10px;
+}
+form input[type="text"] + label,form input[type="email"] + label,form input[type="tel"] + label, form input[type="password"] + label, form textarea + label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 80px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: white;
+  background: green;
+  border-radius: 3px 0 0 3px;
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  -webkit-transform: translateZ(0) translateX(0);
+  transform: translateZ(0) translateX(0);
+}
+form textarea + label {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+
+
+.submit{
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 100%;
+  padding: 0 20px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: white;
+  background: green;
+  margin:1em;
+  
+}
+.submit:hover{
+  border: 2px solid green;
+  background-color: green;
+  color: #fff;
+}
+.submit:hover > i{
+  color: #fff;
+}
+.submit i{
+  color: #5672b7;
+}
+/* END OF CONTACT US PAGE CSS */
+
+.copyright{
+      background-color: #111; /* Black Gray */
+      color: #fff;
+      width:100%;
+      margin:0;
+      padding:0;
+
+  }
+
+a {
+  color:green;
+  text-decoration: none;
+}
+a:hover{
+   color:green;
+  
+}
+@media (max-width: 1024px) {
+  
+  .padding{
+    padding:1em;
+  }
+}
+@media (max-width: 700px) {
+.padding{
+    padding:0;
+    padding-top:1em;
+    padding-bottom:1em;
+  }
+a {
+  color:green;
+  text-decoration: none;
+}
+ 
+}
